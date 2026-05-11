@@ -1,0 +1,10 @@
+Tải được data về Titanic
+https://www.kaggle.com/competitions/titanic
+1. Load dataset Titanic bằng seaborn và in ra 5 dòng đầu. Tổng cộng có bao nhiêu hành khách?
+2. Dùng df.info() để xem kiểu dữ liệu từng cột. Cột nào có giá trị null? Cột nào nhiều null nhất?
+3. Dùng df.describe() xem thống kê mô tả. Tuổi trung bình của hành khách là bao nhiêu? Giá vé cao nhất là bao nhiêu?
+4. Có bao nhiêu hành khách nam và bao nhiêu hành khách nữ? Dùng value_counts().
+5. Hành khách đi hạng mấy (1, 2, 3) nhiều nhất? Tính số lượng và tỉ lệ phần trăm mỗi hạng.
+6. Lọc ra tất cả hành khách nữ. Họ chiếm bao nhiêu % tổng số hành khách?
+7. Lọc ra hành khách đi hạng 1 (first class). Giá vé trung bình của nhóm này là bao nhiêu?
+8. Có bao nhiêu hành khách dưới 18 tuổi? Bao nhiêu người trên 60 tuổi?
