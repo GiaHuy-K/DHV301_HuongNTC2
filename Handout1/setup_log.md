@@ -15,3 +15,4 @@ Kết quả: Sau khi chuyển về phiên bản Jupyter cách đây 9 tháng, ex
 
 
 Link tham khảo: [VS Code Extension Marketplace - Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+[Bài trên reddit](https://www.reddit.com/r/learnpython/comments/1jqdzdu/no_kernels_to_select_from_in_vs_code/?tl=vi)
