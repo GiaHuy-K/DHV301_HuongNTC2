@@ -14,5 +14,6 @@ Bước 2 - Xử lý xung đột: Thực hiện hạ cấp phiên bản (Downgra
 Kết quả: Sau khi chuyển về phiên bản Jupyter cách đây 9 tháng, extension đã kích hoạt thành công. Môi trường hoạt động ổn định và đã thực hiện import thành công các thư viện: pandas, numpy, matplotlib, seaborn.
 
 
-Link tham khảo: [VS Code Extension Marketplace - Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
-[Bài trên reddit](https://www.reddit.com/r/learnpython/comments/1jqdzdu/no_kernels_to_select_from_in_vs_code/?tl=vi)
+Link tham khảo: 
+1. [VS Code Extension Marketplace - Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+2. [Bài trên reddit](https://www.reddit.com/r/learnpython/comments/1jqdzdu/no_kernels_to_select_from_in_vs_code/?tl=vi)
