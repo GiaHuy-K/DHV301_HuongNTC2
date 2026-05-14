@@ -8,6 +8,6 @@
 
 # Điều học được ngoài bài: Setup môi trường phải thật cẩn thận, nếu không bạn sẽ mất mấy tiếng với đống lỗi từ .venv.
 
-1. Điều khó nhất khi học python và pandas hiện nay chính là hàm setup môi trường.
+1. Điều khó nhất khi học python và pandas hiện nay chính là giai đoạn setup môi trường.
 2. Điều thú vị nhất chính là các hàm xử lí của python quá nhiều để tìm hiểu, cần thời gian rất nhiều.
 3. Câu hỏi về titanic khoang ở mũi tàu của tôi vẫn chưa có câu trả lời.
