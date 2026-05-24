@@ -1,0 +1,33 @@
+Trả lời các câu hỏi: 
+1. Tại sao chúng ta không fillna(mean) cho cột lương?
+Trong dữ liệu thực tế, lương thường không tuân theo phân phối chuẩn mà thường bị lệch phải (Right-skewed).
+
++) Ảnh hưởng của Outliers (Giá trị ngoại lai): Chỉ cần một vài "sếp tổng" có mức lương cực cao sẽ kéo con số mean (trung bình) lên rất lớn,
+không phản ánh đúng mức lương của đa số nhân viên.
++) Bản chất MNAR (Missing Not At Random): Như bạn đã nêu trong giả thuyết, người lương thấp thường có xu hướng ngại công khai.
+Nếu ta dùng mean (vốn đã bị kéo cao bởi các đại gia), ta sẽ vô tình "thổi phồng" thu nhập của nhóm này, làm sai lệch kết quả phân tích.
++) Giải pháp: Nên dùng Median (Trung vị) vì nó bền bỉ (robust) hơn với các giá trị cực đoan.
+2. Xử lý cột 'country' (null = 8%)
+3. Xử lý cột 'years_of_experience' (null = 3%) , có cách nào làm mất ít thông tin hơn?
+4. Viết hàm missing_report() ngắn gọn
+Bài tập về nhà sau buổi này
+1. Hoàn thành xử lý missing + duplicate + dtype cho toàn bộ dataset
+2. Viết Decision Log cho ít nhất 3 quyết định (theo mẫu hôm nay)
+3. Commit lên GitHub với message (không phải 'update' hay 'fix')
+Ví dụ Decision Log:## Quyết định xử lý: Cột 'annual_salary_USD' — missing 15%
+ 
+**Quan sát**: 4.125 hàng null trong tổng 27.500 (15%)
+ 
+**Giả thuyết về nguyên nhân**:
+  - Khả năng MNAR cao: người lương thấp thường ngại khai
+  - Nếu đúng: điền mean/median sẽ ước lượng CAO HƠN thực tế
+ 
+**Phương án đã xem xét**:
+  1. Drop hàng null → mất 15% data, có thể bias mẫu
+  2. Fillna(global_median) → đơn giản nhưng bỏ qua context
+  3. Fillna(median theo industry) → tốt hơn, dùng được ngữ cảnh
+ 
+**Quyết định**: Phương án 3 + thêm cột flag 'salary_imputed'
+**Lý do**: Phân tích chính là so sánh lương theo ngành.
+         Dùng median ngành thực tế hơn global median.
+         Flag để ai dùng sau biết và có thể filter nếu cần.
