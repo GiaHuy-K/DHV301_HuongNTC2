@@ -16,3 +16,9 @@ pathlib
 statsmodels
 prophet
 gensim
+requests
+openpyxl
+scipy
+python-multipart
+python-dotenv
+tqdm
